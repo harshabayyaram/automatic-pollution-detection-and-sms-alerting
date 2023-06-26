@@ -53,16 +53,6 @@ void loop() {
 }
 
 void SendTextMessage() {
-  // mySerial.println("AT+CMGF=1");  //To send SMS in Text Mode
-  // delay(1000);
-  // mySerial.println("AT+CMGS=\"+918977801788\"\r");  // change to the phone number you using
-  // delay(1000);
-  // mySerial.println("Gas Leaking!");  //the content of the message
-  // delay(200);
-  // mySerial.println((char)26);  //the stopping character
-  // delay(1000);
-
-  // Serial.println("ATD6309344794;");             // ATDxxxxxxxxxx; mobile number in place of *****  
   Serial.println("AT+CMGF=1");                 //Sets the GSM Module in Text Mode
   delay(1000);
   Serial.println("AT+CMGS=\"+916309344794\"\r");  //mobile number in place of ****
